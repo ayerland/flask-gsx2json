@@ -1,0 +1,16 @@
+# Base image is amazonlinux
+FROM amazonlinux:latest as builder
+
+COPY sample_docker_requirements.txt requirements.txt
+
+RUN yum update -y -q \
+    && yum install python3 -y -q \
+    && python3 -m ensurepip \
+    && pip3 install -r requirements.txt
+
+
+FROM amazonlinux:latest 
+WORKDIR /python-flask-gsx2json
+COPY --from=builder / /
+COPY . .
+ENTRYPOINT [ "python3", "-m", "flask", "run", "--host=0.0.0.0" ]

@@ -1,0 +1,5 @@
+Pipfile.lock
+*.swp
+initiate-repo
+buildc.sh
+teardownc.sh

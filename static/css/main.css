@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    background-color: LightSlateGray;
+}
+p {
+    color: white;
+    font-family: Shanti;
+    font-size: 1.2em;
+    display: inline-block;
+    margin:  20px;
+}
+
+input {
+  width: 400px;
+  margin: 2px 2px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-family: Shanti;
+  font-size: 1.3em;
+  text-align: left;
+}
+
+textarea {
+  width: 450px;
+  margin: 2px 2px;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  font-family: Shanti;
+  font-size: 1.3em;
+  text-align: left;
+}
+
+input:focus {
+    outline: none;
+    border: solid 5px LightSteelBlue;
+}
+
+#process {
+    background-color:SteelBlue;
+    border:  none;
+    width:  200px;
+    color: white;
+}
+
+#process:hover {
+    background-color: LightSteelBlue;
+}

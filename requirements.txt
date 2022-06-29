@@ -1,0 +1,10 @@
+certifi
+click
+Flask
+six
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+wincertstore

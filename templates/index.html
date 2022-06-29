@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Google Sheet to JSON</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <p>Get Google Sheet in JSON format</p>
+    <br>
+    <form action="process" method="get">
+        <input type="text" placeholder="Google Sheet ID" name="gsx_id" required>
+        <br><br>
+        <input type="submit" value="GET SHEET" id="process" style="text-align: center;">
+    </form>
+</body>
+</html>
